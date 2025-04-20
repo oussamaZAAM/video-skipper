@@ -19,6 +19,6 @@ No Third-Party Services:
 This extension does not communicate with any external servers or third-party services.
 
 Contact:
-If you have any questions about this privacy policy, please contact [].
+If you have any questions about this privacy policy, please contact: videoskipper69@gmail.com.
 
 Last updated: 04/20/2025
