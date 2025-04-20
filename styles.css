@@ -1,0 +1,231 @@
+/* Pixelated cute design */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    width: 250px;
+    padding: 15px;
+    font-family: 'Press Start 2P', cursive;
+    background: #fce4ec; /* Light pink */
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid #ff80ab;
+    box-shadow: 5px 5px 0px #ff4081;
+    color: #333;
+}
+
+h2 {
+    font-size: 14px;
+    color: #ff4081;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px #ff80ab;
+    line-height: 1.5;
+}
+
+.tagline {
+    font-size: 8px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff3f8;
+    border: 2px solid #ff80ab;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0px #ff80ab;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 12px;
+    margin-right: 8px;
+    color: #ff4081;
+}
+
+input {
+    width: 60px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #ff80ab;
+    border-radius: 5px;
+    background: #fff3f8;
+    color: #333;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.seconds {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: #ff4081;
+    color: white;
+    border: 2px solid #ff80ab;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #ff80ab;
+    font-family: 'Press Start 2P', cursive;
+    transition: transform 0.1s;
+}
+
+button:hover {
+    background: #e91e63;
+    transform: translateY(1px);
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 1px 1px 0px #ff80ab;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 9px;
+    color: #777;
+}
+
+.footer b {
+    font-size: 16px;
+    color: #ff4081;
+}
+
+.icon-container {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.icon-container img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.speech-bubble {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: white;
+    border: 2px solid #ff80ab;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 8px;
+    max-width: 80px;
+    text-align: left;
+    box-shadow: 2px 2px 0px #ff80ab;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+/* Compact container for toggle */
+.input-container.compact {
+    padding: 6px 8px;
+    margin-bottom: 8px;
+}
+
+.toggle-label {
+    font-size: 10px;
+    color: #ff4081;
+    margin-right: 8px;
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffa7c4;
+    border: 2px solid #ff80ab;
+    transition: .2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .2s;
+}
+
+input:checked + .slider {
+    background-color: #ff4081;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Buy Me a Coffee Button Styles */
+.coffee-button-container {
+    margin-top: 10px;
+}
+
+.coffee-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffdd00;
+    color: #000000;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 2px solid #e6c700;
+    box-shadow: 2px 2px 0px #e6c700;
+    text-decoration: none;
+    font-size: 7px;
+    transition: all 0.2s ease;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.coffee-button:hover {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 0px #e6c700;
+    background: #ffcc00;
+}
+
+.coffee-icon {
+    font-size: 11px;
+    margin-right: 4px;
+}
+
+.coffee-text {
+    font-size: 7px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Skipper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="icon-container">
+        <img src="./images/icon.png" height="75" width="75" alt="Cute video skipper icon" />
+    </div>
+    <h2>Video Rewind / Fast-forward</h2>
+    <div class="tagline">Making video watching super easy!</div>
+    <div class="input-container">
+        <label for="skipTimeInput">Jump:</label>
+        <input type="number" id="skipTimeInput" min="1" value="10"> 
+        <span class="seconds">seconds</span>
+    </div>
+    
+    <div class="input-container compact">
+        <label for="visualToggle" class="toggle-label">Show overlay</label>
+        <label class="toggle-switch">
+            <input type="checkbox" id="visualToggle" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <button id="saveBtn">Let's Go!</button>
+    <div class="footer">
+        Use <b>⇐</b> to rewind<br>
+        Use <b>⇒</b> to skip ahead
+    </div>
+    
+    <div class="coffee-button-container">
+        <a href="https://buymeacoffee.com/yourname" target="_blank" class="coffee-button">
+            <span class="coffee-icon">☕</span>
+            <span class="coffee-text">Buy me a coffee</span>
+        </a>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
