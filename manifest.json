@@ -3,7 +3,7 @@
     "name": "Video Rewind & Fast-forward",
     "version": "1.0",
     "description": "Skip videos forward/backward by user-defined seconds",
-    "permissions": ["storage", "tabs", "scripting"],
+    "permissions": ["storage"],
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
