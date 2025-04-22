@@ -56,7 +56,7 @@
   }
   
   // Create skip indicator element
-  function createSkipIndicator(video, side) {
+  function createSkipIndicator(side) {
     const indicator = document.createElement('div');
     indicator.className = `video-skip-indicator-${side}`;
     indicator.style.cssText = `
@@ -65,7 +65,7 @@
       ${side}: 7.5%;
       transform: translateY(-50%);
       padding: 12px 16px;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.5);
       color: white;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       border-radius: 10px;
@@ -78,7 +78,7 @@
       align-items: center;
       gap: 6px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      min-width: 60px;
+      min-width: 100px;
     `;
     
     // Add icon based on direction
@@ -127,8 +127,8 @@
         z-index: 2147483647;
       `;
       
-      const leftIndicator = createSkipIndicator(video, 'left');
-      const rightIndicator = createSkipIndicator(video, 'right');
+      const leftIndicator = createSkipIndicator('left');
+      const rightIndicator = createSkipIndicator('right');
       
       container.appendChild(leftIndicator);
       container.appendChild(rightIndicator);
